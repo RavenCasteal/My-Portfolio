@@ -1,0 +1,81 @@
+/* ---------- side section dots ---------- */
+
+.dots {
+  position: fixed;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 115;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 13px;
+}
+
+.dots__dot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dots__pip {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  transition: transform 0.3s var(--ease), background-color 0.3s var(--ease),
+    border-color 0.3s var(--ease);
+}
+
+.dots__dot.is-active .dots__pip {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: scale(1.45);
+}
+
+.dots__label {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateX(6px);
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.dots__dot:hover .dots__label,
+.dots__dot:focus-visible .dots__label {
+  opacity: 1;
+  transform: none;
+  color: var(--fg, #ececec);
+}
+
+.dots__dot:focus-visible {
+  outline: none;
+}
+
+.dots__dot:focus-visible .dots__pip {
+  box-shadow: 0 0 0 3px rgba(201, 242, 78, 0.3);
+}
+
+@media (max-width: 760px) {
+  .dots {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dots__pip,
+  .dots__label {
+    transition: none;
+  }
+}

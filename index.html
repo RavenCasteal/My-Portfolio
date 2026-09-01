@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en" data-accent="lime" class="is-locked">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paul — Creative Web Developer</title>
+<meta name="description" content="Creative web developer building modern, interactive, high-performance websites for businesses and brands.">
+<meta name="theme-color" content="#0b0c0d">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="Paul — Creative Web Developer">
+<meta property="og:description" content="Building digital experiences that don't feel boring.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/dots.css">
+  <link rel="stylesheet" href="css/mark.css">
+
+<noscript>
+  <style>
+    .loader { display: none !important; }
+    html { overflow: auto !important; }
+  </style>
+</noscript>
+</head>
+
+<body>
+
+<a class="skip-link" href="#work">Skip to content</a>
+
+<div class="progress" aria-hidden="true"><div class="progress__bar"></div></div>
+
+<div class="ambient" aria-hidden="true">
+  <div class="ambient__grid"></div>
+  <div class="ambient__spot"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ LOADER ============ -->
+<div class="loader">
+  <div class="loader__center">
+    <span class="mono">Initializing portfolio</span>
+    <p class="loader__title">Building<br>something<br>worth<br>clicking.</p>
+  </div>
+  <div class="loader__bottom">
+    <div>
+      <ul style="display:grid;gap:10px;margin-bottom:22px">
+        <li class="loader__step" data-state="active"><span class="loader__dot"></span> Loading interface</li>
+        <li class="loader__step" data-state="idle"><span class="loader__dot"></span> Connecting projects</li>
+        <li class="loader__step" data-state="idle"><span class="loader__dot"></span> Ready</li>
+      </ul>
+      <div class="loader__bar"><div class="loader__fill"></div></div>
+    </div>
+    <div class="loader__pct" aria-hidden="true">0</div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav__inner">
+      <a class="nav__brand" href="#top" data-magnetic>
+        <span class="nav__mark" aria-hidden="true">
+          <svg class="mark" viewBox="0 0 32 32">
+            <rect class="mark__frame" x="3" y="3" width="26" height="26" rx="7" pathLength="1"/>
+            <path class="mark__stroke" d="M11 23V9h6.5a6 6 0 0 1 0 12H11" pathLength="1"/>
+          </svg>
+        </span>
+        <span data-name>Paul</span>
+        <span>Dev</span>
+      </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a class="nav__link" href="#work" data-magnetic>Work</a>
+      <a class="nav__link" href="#about" data-magnetic>About</a>
+      <a class="nav__link" href="#services" data-magnetic>Services</a>
+      <a class="nav__link" href="#contact" data-magnetic>Contact</a>
+    </nav>
+
+    <div style="display:flex;align-items:center;gap:14px">
+      <span class="nav__status" data-cursor="link">
+        <span class="nav__pulse" aria-hidden="true"></span>
+        <span data-status>Available for projects</span>
+      </span>
+      <button class="nav__burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <i aria-hidden="true"></i><i aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu" id="menu">
+  <ul class="menu__list">
+    <li class="menu__item"><a class="menu__link" href="#work"><em>01</em> Work</a></li>
+    <li class="menu__item"><a class="menu__link" href="#about"><em>02</em> About</a></li>
+    <li class="menu__item"><a class="menu__link" href="#services"><em>03</em> Services</a></li>
+    <li class="menu__item"><a class="menu__link" href="#contact"><em>04</em> Contact</a></li>
+  </ul>
+  <div class="menu__foot">
+    <span class="mono">Available for projects</span>
+    <a class="mono mono--accent" data-email href="mailto:">hello@paul.dev</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero shell" aria-labelledby="hero-title">
+    <div class="hero__grid">
+      <div>
+        <div class="section__meta" style="margin-bottom:26px">
+          <span class="mono mono--accent">Creative web developer</span>
+        </div>
+
+        <h1 class="display display--xl hero__title" id="hero-title" data-anim>
+          <span class="line-mask"><span>Building</span></span>
+          <span class="line-mask"><span>digital</span></span>
+          <span class="line-mask"><span>experiences</span></span>
+          <span class="line-mask"><span><em>that don't</em></span></span>
+          <span class="line-mask accent-line"><span>feel boring.</span></span>
+        </h1>
+
+        <p class="lead hero__lead reveal" data-anim style="margin-top:34px">
+          Creative Web Developer focused on building modern, interactive,
+          high-performance websites for businesses and brands.
+        </p>
+
+        <div class="hero__actions reveal" data-anim>
+          <a class="btn btn--solid" href="#work" data-magnetic data-cursor="link">
+            View my work <span class="btn__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="btn" href="#contact" data-magnetic data-cursor="link">
+            Start a project <span class="btn__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- interactive workspace visualisation -->
+      <div class="stage" aria-hidden="true">
+        <div class="stage__ring"></div>
+        <div class="stage__ring stage__ring--2"></div>
+        <div class="stage__scan"></div>
+
+        <div class="stage__el stage__el--code" data-depth="26" data-rot="-1.6">
+          <b>export</b> function <i>build</i>() {<br>
+          &nbsp;&nbsp;return {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;fast: <b>true</b>,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;boring: false<br>
+          &nbsp;&nbsp;}<br>
+          }
+        </div>
+
+        <div class="stage__el stage__el--window" data-depth="40" data-rot="1.4">
+          <div class="stage__bar"><i></i><i></i><i></i></div>
+          <div class="stage__canvas"><span>Studio</span></div>
+        </div>
+
+        <div class="stage__el stage__el--card" data-depth="18" data-rot="-1">
+          <img src="assets/work/duo-brew.svg" alt="" loading="lazy" decoding="async" width="1200" height="900">
+          <p>Duo Brew — café</p>
+        </div>
+
+        <div class="stage__el stage__el--chip" data-depth="52" data-rot="2">60fps</div>
+
+        <div class="stage__el stage__el--badge" data-depth="30" data-rot="-1">
+          <b>4</b> live builds
+        </div>
+
+        <div class="stage__el stage__el--cursor" data-depth="66">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 2l14 8-6 1.5L10 19z" fill="#c9f24e" stroke="#0b0c0d" stroke-width="1.2"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__foot reveal" data-anim>
+      <span class="cue"><span class="cue__line" aria-hidden="true"></span> Scroll to explore</span>
+      <span class="hero__coords">Remote · <span data-role>Creative Web Developer</span></span>
+    </div>
+  </section>
+
+  <!-- ============ TICKER ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track" data-ticker></div>
+  </div>
+
+  <!-- ============ WORK ============ -->
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="shell">
+      <div class="section__head">
+        <div>
+          <div class="section__meta"><span class="mono mono--accent">01 — Work</span></div>
+          <h2 class="display display--sm" id="work-title" data-anim>
+            <span class="line-mask"><span>Selected</span></span>
+            <span class="line-mask"><span>work</span></span>
+          </h2>
+        </div>
+        <p class="lead reveal" data-anim>
+          Four builds, one method: understand the business, design the
+          experience, then engineer it fast enough to feel effortless.
+        </p>
+      </div>
+      <div class="work"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="shell">
+      <div class="section__head">
+        <div>
+          <div class="section__meta"><span class="mono mono--accent">02 — About</span></div>
+          <h2 class="display display--sm" id="about-title" data-anim>
+            <span class="line-mask"><span>More than</span></span>
+            <span class="line-mask"><span>just code.</span></span>
+          </h2>
+        </div>
+        <p class="lead reveal" data-anim>
+          A developer who treats layout, motion and performance as the same
+          problem — solved in that order.
+        </p>
+      </div>
+
+      <div class="about__grid">
+        <figure class="about__visual" data-parallax="0.05">
+          <img src="assets/about/portrait.svg" alt="Abstract scanline portrait representing the developer" loading="lazy" decoding="async" width="900" height="1100">
+          <figcaption class="about__stamp">
+            <span>Creative frontend</span>
+            <span data-role>Dev</span>
+          </figcaption>
+        </figure>
+
+        <div>
+          <div class="about__copy stagger" data-about-copy data-anim></div>
+          <dl class="about__facts reveal" data-about-facts data-anim></dl>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="skills__field" data-cursor="link" data-cursor-label="Drag"></div>
+        <div class="skills__panel reveal" data-anim aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="shell">
+      <div class="section__head">
+        <div>
+          <div class="section__meta"><span class="mono mono--accent">03 — Services</span></div>
+          <h2 class="display display--sm" id="services-title" data-anim>
+            <span class="line-mask"><span>What I can</span></span>
+            <span class="line-mask"><span>build for you.</span></span>
+          </h2>
+        </div>
+        <p class="lead reveal" data-anim>
+          Four ways to work together — from a first website to rescuing one
+          that never performed.
+        </p>
+      </div>
+      <div class="services" data-services></div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" id="process" aria-labelledby="process-title">
+    <div class="shell">
+      <div class="section__head">
+        <div>
+          <div class="section__meta"><span class="mono mono--accent">04 — Process</span></div>
+          <h2 class="display display--sm" id="process-title" data-anim>
+            <span class="line-mask"><span>How an idea</span></span>
+            <span class="line-mask"><span>becomes a website.</span></span>
+          </h2>
+        </div>
+        <p class="lead reveal" data-anim>
+          No mystery, no vanishing acts. Four stages, each with something
+          you can react to.
+        </p>
+      </div>
+      <div class="process" data-steps></div>
+    </div>
+  </section>
+
+  <!-- ============ PLAYGROUND ============ -->
+  <section class="section" id="lab" aria-labelledby="lab-title">
+    <div class="shell">
+      <div class="section__head">
+        <div>
+          <div class="section__meta"><span class="mono mono--accent">05 — Lab</span></div>
+          <h2 class="display display--sm" id="lab-title" data-anim>
+            <span class="line-mask"><span>Experiment</span></span>
+            <span class="line-mask"><span>with the site.</span></span>
+          </h2>
+        </div>
+        <p class="lead reveal" data-anim>
+          This page is a system, not a poster. Take the controls — everything
+          resets with one click.
+        </p>
+      </div>
+
+      <div class="lab">
+        <div class="lab__canvas">
+          <span class="lab__hint">Drag the components →</span>
+        </div>
+
+        <div class="lab__controls">
+          <div class="lab__control">
+            <span class="mono">Accent</span>
+            <div class="swatches">
+              <button class="swatch" type="button" data-accent-set="lime" aria-pressed="true" aria-label="Electric lime" style="background:#c9f24e"></button>
+              <button class="swatch" type="button" data-accent-set="orange" aria-pressed="false" aria-label="Soft orange" style="background:#ff8b4d"></button>
+              <button class="swatch" type="button" data-accent-set="blue" aria-pressed="false" aria-label="Deep blue" style="background:#5b8cff"></button>
+              <button class="swatch" type="button" data-accent-set="purple" aria-pressed="false" aria-label="Vibrant purple" style="background:#a97bff"></button>
+            </div>
+          </div>
+
+          <div class="lab__control">
+            <span class="mono">Interface</span>
+            <div class="lab__row">
+              <button class="toggle" type="button" data-toggle="grid" aria-pressed="true">
+                <span class="toggle__track"><span class="toggle__knob"></span></span> Grid
+              </button>
+              <button class="toggle" type="button" data-toggle="dense" aria-pressed="false">
+                <span class="toggle__track"><span class="toggle__knob"></span></span> Dense grid
+              </button>
+              <button class="toggle" type="button" data-toggle="grain" aria-pressed="true">
+                <span class="toggle__track"><span class="toggle__knob"></span></span> Grain
+              </button>
+            </div>
+          </div>
+
+          <div class="lab__control">
+            <span class="mono">Type scale — <span data-scale-out>100%</span></span>
+            <input class="slider" type="range" min="0.85" max="1.25" step="0.01" value="1" data-scale aria-label="Adjust typography scale">
+          </div>
+
+          <div class="lab__control">
+            <button class="btn" type="button" data-reset data-magnetic data-cursor="link">
+              Reset everything <span class="btn__arrow" aria-hidden="true">↺</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST ============ -->
+  <section class="section" id="trust" aria-labelledby="trust-title">
+    <div class="shell">
+      <div class="section__head">
+        <div>
+          <div class="section__meta"><span class="mono mono--accent">06 — Trust</span></div>
+          <h2 class="display display--sm" id="trust-title" data-anim>
+            <span class="line-mask"><span>Why work</span></span>
+            <span class="line-mask"><span>with me?</span></span>
+          </h2>
+        </div>
+        <p class="lead reveal" data-anim>
+          No inflated numbers. Just the standards every build is held to.
+        </p>
+      </div>
+
+      <div class="trust">
+        <ul class="trust__list stagger" data-trust data-anim></ul>
+        <div class="stats" data-stats></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="contact__field" aria-hidden="true"></div>
+    <div class="shell contact__inner">
+      <div class="section__meta"><span class="mono mono--accent">07 — Contact</span></div>
+
+      <h2 class="display display--xl" id="contact-title" data-anim>
+        <span class="line-mask"><span>Have a project</span></span>
+        <span class="line-mask"><span>in mind?</span></span>
+      </h2>
+
+      <p class="display display--sm accent-line" style="margin-top:26px;color:var(--fg-4)" data-anim>
+        <span class="line-mask"><span>Let's build</span></span>
+        <span class="line-mask"><span>something great.</span></span>
+      </p>
+
+      <a class="contact__mail" data-email href="mailto:">hello@paul.dev</a>
+
+      <div class="contact__socials" data-socials></div>
+
+      <div class="contact__cta reveal" data-anim>
+        <a class="btn btn--solid btn--lg" data-email data-magnetic data-cursor="link" href="mailto:">
+          Start a conversation <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="shell footer__inner">
+    <span class="footer__note">
+      © <span data-year>2026</span> <span data-name>Paul</span> — Built with creativity and too much coffee.
+    </span>
+    <button class="to-top" type="button" data-top data-magnetic data-cursor="link">
+      Back to top
+      <svg width="11" height="12" viewBox="0 0 11 12" fill="none" aria-hidden="true">
+        <path d="M5.5 11V1M1 5l4.5-4.5L10 5" stroke="currentColor" stroke-width="1.2"/>
+      </svg>
+    </button>
+  </div>
+</footer>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal" role="dialog" aria-modal="true" aria-label="Project details" aria-hidden="true">
+  <div class="modal__scrim"></div>
+  <div class="modal__panel"></div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/animations/smooth-scroll.js"></script>
+<script src="js/animations/cursor.js"></script>
+<script src="js/animations/magnetic.js"></script>
+<script src="js/animations/scroll-animations.js"></script>
+<script src="js/components/loader.js"></script>
+<script src="js/components/nav.js"></script>
+<script src="js/components/dots.js"></script>
+<script src="js/components/favicon.js"></script>
+<script src="js/components/hero.js"></script>
+<script src="js/components/work.js"></script>
+<script src="js/components/about.js"></script>
+<script src="js/components/services.js"></script>
+<script src="js/components/playground.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
