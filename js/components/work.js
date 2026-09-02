@@ -158,7 +158,7 @@ PF.work = (function () {
       });
     }
 
-    /* deep link support: /#work/duo-brew */
+    /* deep link support: /#work/miks-coffee */
     const hash = location.hash.match(/^#work\/(.+)$/);
     if (hash) setTimeout(() => open(hash[1]), 2200);
 

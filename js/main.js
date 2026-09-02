@@ -24,6 +24,17 @@
     setAll("[data-year]", String(new Date().getFullYear()));
     setAll("[data-email]", C.profile.email);
 
+    // phone — display as written, build E.164 tel: link from digits
+    const phoneEl = U.qs("[data-phone]");
+    if (phoneEl && C.profile.phone) {
+      phoneEl.textContent = C.profile.phone;
+      if (phoneEl.tagName === "A") {
+        const digits = C.profile.phone.replace(/[^\d]/g, "");
+        const e164 = "+" + (digits[0] === "0" ? "63" + digits.slice(1) : digits);
+        phoneEl.setAttribute("href", "tel:" + e164);
+      }
+    }
+
     const socials = U.qs("[data-socials]");
     if (socials) {
       socials.innerHTML = C.profile.socials

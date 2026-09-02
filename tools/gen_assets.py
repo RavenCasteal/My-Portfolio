@@ -154,12 +154,6 @@ def mobile(p):
 
 PROJECTS = [
     dict(
-        slug="duo-brew", title="Duo Brew", brand="DUO BREW", tag="DUO BREW / 2026",
-        page="#0F1512", chrome="#131B17", ink="#EAF2EC", accent="#5FB49A", btnInk="#0F1512",
-        block="#16211C", cardFill="#1E2C25", accentSoft=".26", mobileBg="#090D0B",
-        headline=["TWO", "BEANS,", "ONE CUP."], cta="FIND US",
-    ),
-    dict(
         slug="portfolio-project", title="Portfolio Project", brand="P / STUDIO", tag="PORTFOLIO / 2026",
         page="#0B0C0D", chrome="#101113", ink="#EDEBE6", accent="#C9F24E", btnInk="#0B0C0D",
         block="#141518", cardFill="#1A1C1F", accentSoft=".22", mobileBg="#08090A",

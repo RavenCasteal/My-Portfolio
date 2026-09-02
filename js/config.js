@@ -8,7 +8,8 @@ PF.CONFIG = {
   profile: {
     name: "PAUL",
     role: "CREATIVE WEB DEVELOPER",
-    email: "hello@paul.dev",
+    email: "diazpaul453@gmail.com",
+    phone: "+63 993 414 9590",
     location: "Available worldwide — remote",
     status: "Available for projects",
     about: [
@@ -23,9 +24,8 @@ PF.CONFIG = {
       { k: "Status", v: "Open" },
     ],
     socials: [
-      { label: "GitHub", href: "https://github.com/" },
-      { label: "Instagram", href: "https://instagram.com/" },
-      { label: "LinkedIn", href: "https://linkedin.com/" },
+      { label: "GitHub", href: "https://github.com/RavenCasteal" },
+      { label: "Instagram", href: "https://www.instagram.com/itsmrmilkshake/" },
     ],
   },
 
@@ -61,31 +61,6 @@ PF.CONFIG = {
         "Store locator with opening hours and directions",
         "Mobile-first layouts tuned for one-handed use",
         "SEO-ready structure with local business markup",
-      ],
-    },
-    {
-      id: "duo-brew",
-      title: "Duo Brew",
-      category: "Modern Café Website",
-      year: "2026",
-      desc: "A modern café site built around two founders and one idea: good coffee shouldn't need a paragraph of explanation.",
-      tech: ["React", "CSS", "Firebase", "UI/UX Design"],
-      ui: ["Split hero", "Story timeline", "Gallery"],
-      img: "assets/work/duo-brew.svg",
-      shots: ["assets/work/duo-brew.svg", "assets/work/duo-brew-mobile.svg"],
-      live: "https://duo-brew-nu.vercel.app/",
-      overview:
-        "Duo Brew is a two-person café with a strong visual identity and no website. The build leans into calm: generous space, restrained type, and a story section that reads like a short magazine piece.",
-      problem:
-        "Their identity lived entirely in print — menus, cups, signage. Translating that to screen risked either over-designing it or flattening it into a generic café template.",
-      solution:
-        "I treated the site as an extension of the print system: the same grid, the same type scale, rebuilt for interaction. React handles the gallery and story timeline, with images lazy-loaded and served as modern formats.",
-      features: [
-        "Editorial story timeline with scroll-linked reveals",
-        "Lazy-loaded gallery in modern image formats",
-        "Component-driven React build for easy future pages",
-        "Accessible colour contrast across the whole palette",
-        "Contact and catering enquiry with spam-safe handling",
       ],
     },
     {
@@ -186,7 +161,7 @@ PF.CONFIG = {
     {
       n: "03",
       title: "Responsive Design",
-      desc: "Websites optimized for desktop, tablet, and mobile devices — built mobile-first.",
+      desc: "Websites optimized for desktop, tablet, and mobile devices built mobile-first.",
     },
     {
       n: "04",
@@ -205,13 +180,13 @@ PF.CONFIG = {
 
   /* ---------- skills: x/y are percentage positions inside the field ---------- */
   skills: [
-    { name: "HTML", x: 8, y: 12, level: 5, desc: "Semantic, accessible markup as the foundation of every build.", projects: ["Mik's Coffee Shop", "Duo Brew"] },
+    { name: "HTML", x: 8, y: 12, level: 5, desc: "Semantic, accessible markup as the foundation of every build.", projects: ["Mik's Coffee Shop"] },
     { name: "CSS", x: 40, y: 6, level: 5, desc: "Modern layout, custom properties, and motion that stays cheap to render.", projects: ["Portfolio Project", "Milk Tea Brand"] },
     { name: "JavaScript", x: 68, y: 15, level: 5, desc: "Vanilla-first interaction engineering — no framework needed to feel alive.", projects: ["Portfolio Project", "Milk Tea Brand"] },
-    { name: "React", x: 12, y: 36, level: 4, desc: "Component architecture for products that need to grow.", projects: ["Duo Brew"] },
-    { name: "Next.js", x: 46, y: 30, level: 4, desc: "Routing, rendering strategies and performance defaults for content-heavy sites.", projects: ["Duo Brew"] },
-    { name: "Firebase", x: 74, y: 40, level: 4, desc: "Auth, data and hosting for sites clients can actually update.", projects: ["Mik's Coffee Shop", "Duo Brew"] },
-    { name: "UI/UX Design", x: 6, y: 60, level: 4, desc: "Layout, hierarchy and interaction design before implementation.", projects: ["Milk Tea Brand", "Duo Brew"] },
+    { name: "React", x: 12, y: 36, level: 4, desc: "Component architecture for products that need to grow.", projects: [] },
+    { name: "Next.js", x: 46, y: 30, level: 4, desc: "Routing, rendering strategies and performance defaults for content-heavy sites.", projects: [] },
+    { name: "Firebase", x: 74, y: 40, level: 4, desc: "Auth, data and hosting for sites clients can actually update.", projects: ["Mik's Coffee Shop"] },
+    { name: "UI/UX Design", x: 6, y: 60, level: 4, desc: "Layout, hierarchy and interaction design before implementation.", projects: ["Milk Tea Brand"] },
     { name: "Responsive Design", x: 36, y: 56, level: 5, desc: "Mobile-first layouts that hold up on real, mid-range devices.", projects: ["Mik's Coffee Shop", "Milk Tea Brand"] },
     { name: "SEO", x: 66, y: 64, level: 4, desc: "Structure, semantics and metadata that make a site findable.", projects: ["Mik's Coffee Shop"] },
     { name: "Web Performance", x: 20, y: 82, level: 5, desc: "Budgets, lazy loading and transform-only animation to hold 60fps.", projects: ["Portfolio Project", "Milk Tea Brand"] },
