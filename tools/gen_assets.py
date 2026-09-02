@@ -154,12 +154,6 @@ def mobile(p):
 
 PROJECTS = [
     dict(
-        slug="miks-coffee", title="Mik's Coffee Shop", brand="MIK'S", tag="MIK'S COFFEE / 2026",
-        page="#14100D", chrome="#1C1611", ink="#F6EEDF", accent="#E09A4E", btnInk="#14100D",
-        block="#241B14", cardFill="#2E2218", accentSoft=".30", mobileBg="#0B0908",
-        headline=["BREWED", "SLOW."], cta="VIEW MENU",
-    ),
-    dict(
         slug="duo-brew", title="Duo Brew", brand="DUO BREW", tag="DUO BREW / 2026",
         page="#0F1512", chrome="#131B17", ink="#EAF2EC", accent="#5FB49A", btnInk="#0F1512",
         block="#16211C", cardFill="#1E2C25", accentSoft=".26", mobileBg="#090D0B",
@@ -170,6 +164,12 @@ PROJECTS = [
         page="#0B0C0D", chrome="#101113", ink="#EDEBE6", accent="#C9F24E", btnInk="#0B0C0D",
         block="#141518", cardFill="#1A1C1F", accentSoft=".22", mobileBg="#08090A",
         headline=["BUILDING", "DIGITAL", "EXPERIENCES."], cta="VIEW WORK",
+    ),
+    dict(
+        slug="pearl-dental", title="Pearl Dental", brand="PEARL", tag="PEARL DENTAL / 2026",
+        page="#0C1416", chrome="#10191C", ink="#E6F2F0", accent="#54E0C7", btnInk="#0C1416",
+        block="#16262A", cardFill="#1E3034", accentSoft=".26", mobileBg="#080F10",
+        headline=["YOUR", "BRIGHTEST", "SMILE."], cta="BOOK VISIT",
     ),
 ]
 

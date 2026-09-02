@@ -120,6 +120,31 @@ PF.CONFIG = {
       ],
     },
     {
+      id: "pearl-dental",
+      title: "Pearl Dental",
+      category: "Dental Clinic Landing Page",
+      year: "2026",
+      desc: "A calm, clinical landing page for a dental clinic — clear services, easy appointment booking, and a tone built to put anxious patients at ease.",
+      tech: ["HTML", "CSS", "JavaScript", "UI/UX Design"],
+      ui: ["Booking CTA", "Services grid", "Clinic info"],
+      img: "assets/work/pearl-dental.svg",
+      shots: ["assets/work/pearl-dental.svg", "assets/work/pearl-dental-mobile.svg"],
+      live: "#",
+      overview:
+        "Pearl Dental is a neighbourhood clinic that wanted a web presence as reassuring as the waiting room. The landing page leads with trust signals and a single obvious next step: book a visit.",
+      problem:
+        "The clinic had no website — only a Google listing and a phone number. New patients couldn't learn about services or book without calling during office hours, and anxious first-timers had nothing to put them at ease beforehand.",
+      solution:
+        "I built a fast, mobile-first landing page with a prominent booking CTA, a plain-language services grid, and clinic information front and centre. The visual tone is clean and clinical, using generous space and a calm mint accent to lower anxiety rather than raise it.",
+      features: [
+        "Prominent booking CTA that stays one tap away on mobile",
+        "Plain-language services grid with clear pricing cues",
+        "Clinic info block: hours, location, and what to expect",
+        "Calm, clinical visual system built to reduce patient anxiety",
+        "Mobile-first layouts tuned for on-the-go booking",
+      ],
+    },
+    {
       id: "portfolio-project",
       title: "Portfolio Project",
       category: "Creative Developer Portfolio",
