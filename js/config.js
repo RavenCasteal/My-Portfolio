@@ -39,8 +39,15 @@ PF.CONFIG = {
       desc: "A warm, slow-brewed brand site for a neighbourhood coffee shop — menu, story and store locator built to feel as considered as the coffee.",
       tech: ["HTML", "CSS", "JavaScript", "Firebase"],
       ui: ["Menu system", "Store locator", "Reservation form"],
-      img: "assets/work/miks-coffee.svg",
-      shots: ["assets/work/miks-coffee.svg", "assets/work/miks-coffee-mobile.svg"],
+      img: "assets/work/miks-coffee-1.jpg",
+      shots: [
+        "assets/work/miks-coffee-1.jpg",
+        "assets/work/miks-coffee-2.png",
+        "assets/work/miks-coffee-3.png",
+        "assets/work/miks-coffee-4.png",
+        "assets/work/miks-coffee-5.png",
+        "assets/work/miks-coffee-6.png"
+      ],
       live: "https://mik-s-coffee-shop.vercel.app/",
       overview:
         "Mik's is a small-batch coffee shop that needed an online home with the same warmth as the counter. The site leads with mood and product, then gets out of the way — a menu you can scan in three seconds and a location you can find in one.",
@@ -89,8 +96,14 @@ PF.CONFIG = {
       desc: "An interactive site for a milk tea brand — product customiser, flavour finder and an ordering path built for thumbs.",
       tech: ["JavaScript", "CSS", "HTML", "Web Performance"],
       ui: ["Flavour finder", "Product customiser", "Order CTA"],
-      img: "assets/work/milk-tea.svg",
-      shots: ["assets/work/milk-tea.svg", "assets/work/milk-tea-mobile.svg"],
+      img: "assets/work/russ-tea-1.png",
+      shots: [
+        "assets/work/russ-tea-1.png",
+        "assets/work/russ-tea-2.png",
+        "assets/work/russ-tea-3.png",
+        "assets/work/russ-tea-4.png",
+        "assets/work/russ-tea-5.png"
+      ],
       live: "https://russ-tea-tan.vercel.app/",
       overview:
         "A growing milk tea brand with a menu long enough to intimidate. The site turns that menu into a guided experience: answer two questions, get a drink.",

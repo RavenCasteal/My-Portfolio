@@ -166,12 +166,6 @@ PROJECTS = [
         headline=["TWO", "BEANS,", "ONE CUP."], cta="FIND US",
     ),
     dict(
-        slug="milk-tea", title="Russ Tea", brand="RUSS TEA", tag="RUSS TEA / 2026",
-        page="#171016", chrome="#1E1520", ink="#F8EFF2", accent="#E4799C", btnInk="#171016",
-        block="#241A23", cardFill="#2E2029", accentSoft=".30", mobileBg="#0C080B",
-        headline=["SHAKEN", "NOT", "STIRRED."], cta="ORDER NOW",
-    ),
-    dict(
         slug="portfolio-project", title="Portfolio Project", brand="P / STUDIO", tag="PORTFOLIO / 2026",
         page="#0B0C0D", chrome="#101113", ink="#EDEBE6", accent="#C9F24E", btnInk="#0B0C0D",
         block="#141518", cardFill="#1A1C1F", accentSoft=".22", mobileBg="#08090A",
