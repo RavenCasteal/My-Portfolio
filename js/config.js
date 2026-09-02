@@ -200,6 +200,7 @@ PF.CONFIG = {
     "SEO-ready structure",
     "Interactive experiences",
     "Clear communication",
+    "Booking and contact flows (practice still in process)",
   ],
 
   stats: [
