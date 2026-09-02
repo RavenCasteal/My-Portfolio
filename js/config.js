@@ -9,7 +9,6 @@ PF.CONFIG = {
     name: "PAUL",
     role: "CREATIVE WEB DEVELOPER",
     email: "diazpaul453@gmail.com",
-    phone: "+63 993 414 9590",
     location: "Available worldwide — remote",
     status: "Available for projects",
     about: [
@@ -26,6 +25,7 @@ PF.CONFIG = {
     socials: [
       { label: "GitHub", href: "https://github.com/RavenCasteal" },
       { label: "Instagram", href: "https://www.instagram.com/itsmrmilkshake/" },
+      { label: "63+ 09934149590", copy: "+639934149590" },
     ],
   },
 

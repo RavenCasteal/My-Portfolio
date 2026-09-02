@@ -17,6 +17,27 @@
     });
   }
 
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      try {
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position = "fixed";
+        ta.style.top = "-1000px";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        resolve();
+      } catch (err) { reject(err); }
+    });
+  }
+
   function profile() {
     setAll("[data-name]", C.profile.name);
     setAll("[data-role]", C.profile.role);
@@ -24,29 +45,53 @@
     setAll("[data-year]", String(new Date().getFullYear()));
     setAll("[data-email]", C.profile.email);
 
-    // phone — display as written, build E.164 tel: link from digits
-    const phoneEl = U.qs("[data-phone]");
-    if (phoneEl && C.profile.phone) {
-      phoneEl.textContent = C.profile.phone;
-      if (phoneEl.tagName === "A") {
-        const digits = C.profile.phone.replace(/[^\d]/g, "");
-        const e164 = "+" + (digits[0] === "0" ? "63" + digits.slice(1) : digits);
-        phoneEl.setAttribute("href", "tel:" + e164);
-      }
-    }
-
     const socials = U.qs("[data-socials]");
     if (socials) {
+      const arrow =
+        '<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">' +
+        '<path d="M1 9L9 1M9 1H3M9 1v6" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>';
       socials.innerHTML = C.profile.socials
-        .map(
-          (s) =>
-            '<a class="contact__social" href="' + s.href + '" target="_blank" rel="noopener" data-magnetic>' +
+        .map((s) => {
+          if (s.copy) {
+            return (
+              '<a class="contact__social contact__social--copy" href="tel:' +
+              U.escapeHTML(s.copy) +
+              '" data-copy="' +
+              U.escapeHTML(s.copy) +
+              '" rel="noopener" data-magnetic>' +
+              U.escapeHTML(s.label) +
+              arrow +
+              "</a>"
+            );
+          }
+          return (
+            '<a class="contact__social" href="' +
+            s.href +
+            '" target="_blank" rel="noopener" data-magnetic>' +
             U.escapeHTML(s.label) +
-            '<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">' +
-            '<path d="M1 9L9 1M9 1H3M9 1v6" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>' +
+            arrow +
             "</a>"
-        )
+          );
+        })
         .join("");
+
+      // click-to-copy for copyable socials (e.g. phone)
+      socials.querySelectorAll("[data-copy]").forEach((el) => {
+        el.addEventListener("click", function (e) {
+          e.preventDefault();
+          copyText(el.getAttribute("data-copy"))
+            .then(function () {
+              const orig = el.innerHTML;
+              el.textContent = "Copied!";
+              el.classList.add("is-copied");
+              setTimeout(function () {
+                el.innerHTML = orig;
+                el.classList.remove("is-copied");
+              }, 1400);
+            })
+            .catch(function () {});
+        });
+      });
     }
   }
 

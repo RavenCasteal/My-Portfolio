@@ -801,6 +801,8 @@ main { position: relative; z-index: 1; }
   transition: background-size 0.6s var(--ease), color 0.4s var(--ease);
 }
 .contact__mail:hover { background-size: 100% 1px; color: var(--accent); }
+.contact__social--copy { cursor: copy; }
+.contact__social.is-copied { color: var(--accent); }
 
 .contact__socials {
   display: flex;
