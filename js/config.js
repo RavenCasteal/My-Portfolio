@@ -1,5 +1,5 @@
 /* ============================================================
-   CONFIG — everything editable lives here.
+   CONFIG everything editable lives here.
    Change name, email, links, projects, copy. Nothing else needed.
    ============================================================ */
 window.PF = window.PF || {};
@@ -9,11 +9,11 @@ PF.CONFIG = {
     name: "PAUL",
     role: "CREATIVE WEB DEVELOPER",
     email: "diazpaul453@gmail.com",
-    location: "Available worldwide — remote",
+    location: "Available worldwide remote",
     status: "Available for projects",
     about: [
       "I build websites that don't just look good.",
-      "I focus on creating digital experiences that are <strong>fast, interactive, and designed around real users</strong> — not around a template.",
+      "I focus on creating digital experiences that are <strong>fast, interactive, and designed around real users</strong> not around a template.",
       "I combine modern web technologies, thoughtful design, and creative interaction to help businesses stand out online.",
     ],
     facts: [
@@ -36,7 +36,7 @@ PF.CONFIG = {
       title: "Mik's Coffee Shop",
       category: "Coffee Shop Website",
       year: "2026",
-      desc: "A warm, slow-brewed brand site for a neighbourhood coffee shop — menu, story and store locator built to feel as considered as the coffee.",
+      desc: "A warm, slow-brewed brand site for a neighbourhood coffee shop menu, story and store locator built to feel as considered as the coffee.",
       tech: ["HTML", "CSS", "JavaScript", "Firebase"],
       ui: ["Menu system", "Store locator", "Reservation form"],
       img: "assets/work/miks-coffee-1.jpg",
@@ -50,7 +50,7 @@ PF.CONFIG = {
       ],
       live: "https://mik-s-coffee-shop.vercel.app/",
       overview:
-        "Mik's is a small-batch coffee shop that needed an online home with the same warmth as the counter. The site leads with mood and product, then gets out of the way — a menu you can scan in three seconds and a location you can find in one.",
+        "Mik's is a small-batch coffee shop that needed an online home with the same warmth as the counter. The site leads with mood and product, then gets out of the way a menu you can scan in three seconds and a location you can find in one.",
       problem:
         "The old presence was a social page and a PDF menu. Nothing was indexable, nothing worked on a phone, and regulars had no way to check seasonal offerings without messaging the shop directly.",
       solution:
@@ -68,7 +68,7 @@ PF.CONFIG = {
       title: "Russ Tea",
       category: "Interactive Business Website",
       year: "2026",
-      desc: "An interactive site for a milk tea brand — product customiser, flavour finder and an ordering path built for thumbs.",
+      desc: "An interactive site for a milk tea brand product customiser, flavour finder and an ordering path built for thumbs.",
       tech: ["JavaScript", "CSS", "HTML", "Web Performance"],
       ui: ["Flavour finder", "Product customiser", "Order CTA"],
       img: "assets/work/russ-tea-1.png",
@@ -85,7 +85,7 @@ PF.CONFIG = {
       problem:
         "Twenty-plus drinks, six topping options and three sweetness levels meant new customers stalled at the menu and left. The existing page was a static list with no hierarchy.",
       solution:
-        "I built a lightweight flavour finder and a visual customiser with instant feedback. The interactions are pure CSS transforms and vanilla JavaScript, so it stays smooth on mid-range phones — the majority of their traffic.",
+        "I built a lightweight flavour finder and a visual customiser with instant feedback. The interactions are pure CSS transforms and vanilla JavaScript, so it stays smooth on mid-range phones the majority of their traffic.",
       features: [
         "Flavour finder that narrows the menu to two taps",
         "Live product customiser with instant visual feedback",
@@ -99,7 +99,7 @@ PF.CONFIG = {
       title: "Pearl Dental",
       category: "Dental Clinic Landing Page",
       year: "2026",
-      desc: "A calm, clinical landing page for a dental clinic — clear services, easy appointment booking, and a tone built to put anxious patients at ease.",
+      desc: "A calm, clinical landing page for a dental clinic clear services, easy appointment booking, and a tone built to put anxious patients at ease.",
       tech: ["HTML", "CSS", "JavaScript", "UI/UX Design"],
       ui: ["Booking CTA", "Services grid", "Clinic info"],
       img: "assets/work/pearl-dental.svg",
@@ -108,7 +108,7 @@ PF.CONFIG = {
       overview:
         "Pearl Dental is a neighbourhood clinic that wanted a web presence as reassuring as the waiting room. The landing page leads with trust signals and a single obvious next step: book a visit.",
       problem:
-        "The clinic had no website — only a Google listing and a phone number. New patients couldn't learn about services or book without calling during office hours, and anxious first-timers had nothing to put them at ease beforehand.",
+        "The clinic had no website only a Google listing and a phone number. New patients couldn't learn about services or book without calling during office hours, and anxious first-timers had nothing to put them at ease beforehand.",
       solution:
         "I built a fast, mobile-first landing page with a prominent booking CTA, a plain-language services grid, and clinic information front and centre. The visual tone is clean and clinical, using generous space and a calm mint accent to lower anxiety rather than raise it.",
       features: [
@@ -124,7 +124,7 @@ PF.CONFIG = {
       title: "Portfolio Project",
       category: "Creative Developer Portfolio",
       year: "2026",
-      desc: "This site. A portfolio built as an interactive system rather than a scrolling gallery — every section reacts to the person using it.",
+      desc: "This site. A portfolio built as an interactive system rather than a scrolling gallery every section reacts to the person using it.",
       tech: ["JavaScript", "CSS", "HTML", "Web Performance"],
       ui: ["Custom cursor", "Scroll engine", "Interactive lab"],
       img: "assets/work/portfolio-project.svg",
@@ -133,7 +133,7 @@ PF.CONFIG = {
       overview:
         "A portfolio should demonstrate the thing it's selling. This one is a working interactive system: a custom scroll engine, a state-driven cursor, a draggable skills field and a live theme lab.",
       problem:
-        "Most developer portfolios are the same layout with a different name — hero, three cards, a contact form. They communicate competence, not craft.",
+        "Most developer portfolios are the same layout with a different name hero, three cards, a contact form. They communicate competence, not craft.",
       solution:
         "I built the site around a single accent, an editorial grid and a small set of reusable interaction primitives. Everything animates with transform and opacity only, respects prefers-reduced-motion, and degrades gracefully on touch devices.",
       features: [
@@ -141,7 +141,7 @@ PF.CONFIG = {
         "State-driven custom cursor with contextual labels",
         "Draggable, hover-reactive skills field",
         "Live theme and typography controls",
-        "No dependencies — vanilla JavaScript, ~0 build step",
+        "No dependencies vanilla JavaScript, ~0 build step",
       ],
     },
   ],
@@ -182,7 +182,7 @@ PF.CONFIG = {
   skills: [
     { name: "HTML", x: 8, y: 12, level: 5, desc: "Semantic, accessible markup as the foundation of every build.", projects: ["Mik's Coffee Shop"] },
     { name: "CSS", x: 40, y: 6, level: 5, desc: "Modern layout, custom properties, and motion that stays cheap to render.", projects: ["Portfolio Project", "Milk Tea Brand"] },
-    { name: "JavaScript", x: 68, y: 15, level: 5, desc: "Vanilla-first interaction engineering — no framework needed to feel alive.", projects: ["Portfolio Project", "Milk Tea Brand"] },
+    { name: "JavaScript", x: 68, y: 15, level: 5, desc: "Vanilla-first interaction engineering no framework needed to feel alive.", projects: ["Portfolio Project", "Milk Tea Brand"] },
     { name: "React", x: 12, y: 36, level: 4, desc: "Component architecture for products that need to grow.", projects: [] },
     { name: "Next.js", x: 46, y: 30, level: 4, desc: "Routing, rendering strategies and performance defaults for content-heavy sites.", projects: [] },
     { name: "Firebase", x: 74, y: 40, level: 4, desc: "Auth, data and hosting for sites clients can actually update.", projects: ["Mik's Coffee Shop"] },
